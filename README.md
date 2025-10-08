@@ -1,70 +1,228 @@
-# Getting Started with Create React App
+# ⚖️ Estudio Jurídico - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Landing page moderna y profesional para un estudio jurídico, desarrollada con React y diseñada para convertir visitantes en clientes.
 
-## Available Scripts
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3+-38B2AC?logo=tailwind-css)
 
-In the project directory, you can run:
+## 🌟 Características
 
-### `npm start`
+- ✨ **Diseño Moderno**: Animaciones fluidas y efectos visuales atractivos
+- 📱 **Responsive**: Perfectamente adaptable a móviles, tablets y escritorio
+- 🎨 **UI/UX Profesional**: Interfaz intuitiva con gradientes y transiciones suaves
+- 💬 **Integración WhatsApp**: Botón flotante para contacto directo
+- 📧 **Formulario de Contacto**: Envío de consultas por email
+- 🔗 **Redes Sociales**: Enlaces a todas tus plataformas sociales
+- ⚡ **Alto Rendimiento**: Optimizado para carga rápida
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Ver Demo en Vivo](https://estudiojuridico-demo.netlify.app/) 
 
-### `npm test`
+## 📸 Capturas de Pantalla
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Agrega capturas de pantalla de tu landing page -->
 
-### `npm run build`
+## 🛠️ Tecnologías
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/) - Biblioteca de JavaScript para interfaces de usuario
+- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS utility-first
+- [Lucide React](https://lucide.dev/) - Iconos modernos y escalables
+- [Unsplash](https://unsplash.com/) - Imágenes de alta calidad sin copyright
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📋 Requisitos Previos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js 14.0 o superior
+- npm o yarn
 
-### `npm run eject`
+## 🔧 Instalación
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clona el repositorio**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/tuusuario/estudio-juridico-landing.git
+cd estudio-juridico-landing
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Instala las dependencias**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+# o
+yarn install
+```
 
-## Learn More
+3. **Instala Lucide React**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install lucide-react
+# o
+yarn add lucide-react
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Inicia el servidor de desarrollo**
 
-### Code Splitting
+```bash
+npm start
+# o
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Abre tu navegador**
 
-### Analyzing the Bundle Size
+Visita [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚙️ Configuración
 
-### Making a Progressive Web App
+### Personalizar Información de Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Edita el componente `EstudioJuridicoLanding.jsx`:
 
-### Advanced Configuration
+**WhatsApp:**
+```jsx
+href="https://wa.me/TUNUMERO?text=Hola,%20necesito%20asesoramiento%20legal"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Email:**
+```jsx
+const mailtoLink = `mailto:tuemail@ejemplo.com?subject=...`;
+```
 
-### Deployment
+### Personalizar Redes Sociales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+En el footer, actualiza los enlaces:
 
-### `npm run build` fails to minify
+```jsx
+<a href="https://facebook.com/tupagina" ...>
+<a href="https://instagram.com/tuperfil" ...>
+<a href="https://linkedin.com/in/tuperfil" ...>
+<a href="https://twitter.com/tuusuario" ...>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Personalizar Contenido
+
+Modifica directamente los textos en el componente:
+
+- **Título y descripción**: Sección Hero
+- **Servicios**: Array `servicios`
+- **Sobre Nosotros**: Sección "Sobre Nosotros"
+- **Imágenes**: URLs de Unsplash en las secciones correspondientes
+
+## 📁 Estructura del Proyecto
+
+```
+estudio-juridico-landing/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── EstudioJuridicoLanding.jsx
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
+
+## 🎨 Secciones
+
+### 1. Header
+- Navegación fija con scroll suave
+- Logo y menú responsive
+
+### 2. Hero Section
+- Título impactante con animación
+- Call-to-action destacado
+- Imagen de fondo con overlay
+
+### 3. Servicios
+- 6 áreas de práctica legal
+- Tarjetas con iconos y hover effects
+- Grid responsive
+
+### 4. Sobre Nosotros
+- Descripción del estudio
+- Imagen profesional
+- Layout de dos columnas
+
+### 5. Contacto
+- Formulario completo
+- Validación de campos
+- Diseño glassmorphism
+
+### 6. Footer
+- Copyright
+- Enlaces a redes sociales
+- Diseño elegante
+
+### 7. WhatsApp Button
+- Botón flotante con logo oficial
+- Animación de rebote
+- Enlace directo con mensaje predefinido
+
+## 🎭 Animaciones
+
+- **Slide Down**: Header al cargar la página
+- **Fade In Up**: Elementos al hacer scroll
+- **Pulse**: Botones de llamada a la acción
+- **Bounce**: Botón de WhatsApp
+- **Hover Effects**: Tarjetas y botones
+- **Shine**: Efecto de brillo en hero section
+
+## 📱 Responsive Design
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🚀 Deployment
+
+### Vercel
+
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify
+
+```bash
+npm run build
+# Arrastra la carpeta build a Netlify
+```
+
+### GitHub Pages
+
+```bash
+npm install gh-pages --save-dev
+npm run deploy
+```
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+
+## 👤 Autor
+
+**Sebastian Lapalma**
+
+- GitHub: [@SebaLapalma](https://github.com/SebaLapalma)
+- LinkedIn: [Sebastian Lapalma](https://www.linkedin.com/in/eduardosebastianlapalma/)
+- Email: tuemail@ejemplo.com
+
+## 🙏 Agradecimientos
+
+- Imágenes de [Unsplash](https://unsplash.com/)
+- Iconos de [Lucide](https://lucide.dev/)
+- Inspiración de diseño de landing pages modernas
+
+⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub!
+
+**Hecho con ❤️ para ayudar a estudios jurídicos a tener presencia digital profesional**
